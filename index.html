@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+
+.card{
+    height: 200px;
+    box-shadow: 6px 6px 10px #FDAE5C;
+    padding-left: 100px !important;
+    border-radius: 5px;
+    padding-top: 20px !important;
+}
+@media screen and (min-width: 600px) and (max-width: 671px){
+   .card{
+       padding-left: 220px !important;
+   }
+};</style>
+<body>
+
+<header>   
+<nav class="nav-wrapper transparent z-depth-0">
+
+<div>
+  <a href="#" class="brand-logo">
+    <i class="material-icons logo" style="font-size: 50px;color: #04D2C8;">computer</i>
+    <span style = "font-size: 25px;">Learn<b style="color: #04D2C8; font-size: 30px;">I.T</b></span>
+  </a>
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <li><a class="" href="index.html" style=" border-bottom: 2px solid #04D2C8;">Home</a></li>
+    <li><a class="cool-link" href="about.html">About</a></li>
+    <li><a class="cool-link" href="courses.html">Courses</a></li>
+    <li><a class="cool-link" href="portal.html">Portal</a></li>
+    <a href="contact.html" class=" btn" style="background-color: #FDAE5C;
+    border-radius: 30px; border-radius: 30px;">Contact</a>
+  </ul>
+</div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="portal.html">Portal</a></li>
+    <a href="contact.html" class="btn" style="background-color: #FDAE5C; border-radius: 20px;">Contact</a>
+  </ul>
+
+</nav>
+
+<h4 style="text-align: center; margin-top: 8%; text-shadow: 1px 1px #04D2C8;" class="white-text";>ALL ABOUT PROGRAMMING...</h4>
+<div class="container cont">
+  <div class="row">
+    <div class="col s12 l5 card">
+      <i class="material-icons" style="font-size:100px; margin-left:40px;">school</i><br>
+      <a style="background-color: #FDAE5C; border-radius: 8px;" class="btn modal-trigger" href="#student">signup as a Teacher</a>
+    </div>
+    <div class="col s12 l5 offset-l2 card">
+      <i class="material-icons" style="font-size:100px; margin-left:40px;">books</i><br> 
+      <a style="background-color: #FDAE5C;  border-radius: 8px;"  class="btn modal-trigger" href="#teacher">signup as a Student</a>
+    </div>
+  </div>
+</div>
+    
+</header>
+ <div class="modal" id="student">
+    <div class="modal-footer">
+        <div class="modal-close">
+            <i class="material-icons right-align" style="color: #04D2C8; padding: 20px;">close</i>
+          </div>
+     </div>
+  <div class="modal-content">
+    <div class="container">
+      <h5>Sign up as a student and learn how to <b>CODE</b></h5>
+      <form>
+      <div class="row">
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" id="first_name">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" id="last_name">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="col s12 m12 l12 input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="text" id="email">
+          <label for="email">Email Address</label>
+        </div>
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">contacts</i>
+          <input type="text" id="contacts">
+          <label for="contacts">Phone No</label>
+        </div>
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">books</i>
+          <input type="text" id="courses">
+          <label for="courses">Course(s)</label>
+      </div>
+      <p>Do you want to learn about courses that could be taught, click <a href="">Courses</a> </p>
+      <a href="" class="btn" style="background-color: #FDAE5C; border-radius: 20px;">submit</a>
+    </div>
+    </form>
+  </div>
+ </div>
+
+ </div>
+ <div class="modal" id="teacher">
+  <div class="modal-close">
+    <a href="" class="modal-close"></a>
+  <i class="material-icons right-align" style="color: #04D2C8; padding: 20px;">close</i>
+  </div>
+  <div class="modal-content">
+    <div class="container">
+        <h5>Sign up as a teacher and teach <b> CODING</b></h5>
+      <form>
+      <div class="row">
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" id="first_name">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" id="last_name">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="col s12 m12 l12 input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email">
+          <label for="email">Email Address</label>
+        </div>
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">contacts</i>
+          <input type="number" id="contacts">
+          <label for="contacts">Phone No</label>
+        </div>
+        <div class="col s12 m12 l6 input-field">
+          <i class="material-icons prefix">books</i>
+          <input type="text" id="courses">
+          <label for="courses">Interested Course(s)</label>
+      </div>
+     <p>Do you want to learn about courses that could be taken, click <a href="">Courses</a> </p>
+      <a href="" class="btn" style="background-color: #FDAE5C; border-radius: 20px;">Send</a>
+    </div>
+    </form>
+  </div>
+  </div>
+ </div>
+ 
+<footer></footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.modal').modal();
+      });
+  </script>
+</body>
+</html>
